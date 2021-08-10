@@ -3,7 +3,6 @@ import { useState } from "react";
 
 var emojiDictionary = {
   "😀": "Grinning Face",
-  "😃": "Grinning Face with Big Eyes",
   "😄": "Grinning Face with Smiling Eyes",
   "😁": "Beaming Face with Smiling Eyes",
   "😆": "Grinning Squinting Face",
@@ -19,7 +18,6 @@ var emojiDictionary = {
   "😍": "Smiling Face with Heart-Eyes",
   "🤩": "Star-Struck",
   "😘": "Face Blowing a Kiss",
-  "😗": "Kissing Face",
   "😋": "Face Savoring Food",
   "😛": "Face with Tongue",
   "😜": "Winking Face with Tongue",
@@ -36,7 +34,6 @@ var emojiDictionary = {
   "😑": "Expressionless Face",
   "😶": "Face Without Mouth",
   "😏": "Smirking Face",
-  "😒": "Unamused Face",
   "🙄": "Face with Rolling Eyes",
   "😬": "Grimacing Face",
   "😮‍": "Face Exhaling",
@@ -58,15 +55,9 @@ var emojiDictionary = {
   "🤓": "Nerd Face",
   "🧐": "Face with Monocle",
   "😕": "Confused Face",
-  "😟": "Worried Face",
-  "🙁": "Slightly Frowning Face",
   "😮": "Face with Open Mouth",
   "😯": "Hushed Face",
   "😲": "Astonished Face",
-  "😳": "Flushed Face",
-  "🥺": "Pleading Face",
-  "😦": "Frowning Face with Open Mouth",
-  "😨": "Fearful Face",
   "😰": "Anxious Face with Sweat",
   "😢": "Crying Face",
   "😭": "Loudly Crying Face",
@@ -75,14 +66,9 @@ var emojiDictionary = {
   "😣": "Persevering Face",
   "😞": "Disappointed Face",
   "😓": "Downcast Face with Sweat",
-  "😩": "Weary Face",
   "😫": "Tired Face",
-  "🥱": "Yawning Face",
   "😤": "Face with Steam From Nose",
-  "😡": "Pouting Face",
   "😠": "Angry Face",
-  "🤬": "Face with Symbols on Mouth",
-  "😈": "Smiling Face with Horns",
   "👿": "Angry Face with Horns"
 };
 
@@ -106,7 +92,7 @@ export default function App() {
   }
   return (
     <div className="App">
-      <h1 style={{ backgroundColor: "wheat" }}>Emoji Interpreter</h1>
+      <h1 style={{ backgroundColor: "lightblue" }}>Emoji Interpreter</h1>
       <input onChange={inputChangeHandler} />
       <h3 style={{ color: "blue", fontStyle: "italic" }}>{meaning}</h3>
 
@@ -117,11 +103,11 @@ export default function App() {
           <span
             onClick={() => emojiClickHandler(emoji)}
             style={{
-              backgroundColor: "wheat",
               fontSize: "2rem",
-              padding: "0.5rem",
+              padding: "0.7rem",
               cursor: "pointer"
             }}
+            key={emoji}
           >
             {emoji}
           </span>
