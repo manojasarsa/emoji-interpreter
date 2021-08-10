@@ -1,3 +1,3 @@
 # emoji-interpreter
-This is my first react app that tells the meaning of emoji user enters. It's fun. Try it out!
-Created with CodeSandbox
+This is my first react app that interprets the meaning of an emoji that User enters/clicks. It's a fun App. Try it out!
+
